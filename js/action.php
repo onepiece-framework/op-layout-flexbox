@@ -1,11 +1,12 @@
 <?php
 /**
- * layout-white:/index.php
+ * layout-white:/js/action.php
  *
- * @creation  2016-11-22
+ * @creation  2018-04-12
  * @version   1.0
  * @package   layout-white
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
-include('html.phtml');
+return [
+];
