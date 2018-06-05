@@ -1,0 +1,14 @@
+/**
+ * layout-white:/css/color.css
+ *
+ * @creation  
+ * @version   1.0
+ * @package   layout-white
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+body.body {
+	background-color: white;
+	color: black;
+}
