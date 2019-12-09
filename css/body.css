@@ -26,5 +26,5 @@ body.body div.content-area {
 }
 
 #body-area {
-	min-height: calc(100vh - 65px);
+	min-height: calc(100vh - 6.3em);
 }
