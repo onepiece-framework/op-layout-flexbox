@@ -1,2 +1,2 @@
-"WHITE" is layout of onepiece-framework's app.
+This is layout of onepiece-framework app
 ===
