@@ -2,7 +2,7 @@
 /**
  * layout-white:/index.php
  *
- * @creation  2016-11-22
+ * @created   2016-11-22
  * @version   1.0
  * @package   layout-white
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
