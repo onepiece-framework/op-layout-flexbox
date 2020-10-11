@@ -1,0 +1,34 @@
+
+/** op-layout-white:/css/root.css
+ *
+ * @created   2020-10-11
+ * @version   1.0
+ * @package   op-layout-white
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+:root {
+	/*
+	--root-color-text:       #555;
+	--root-color-disabled:   #bbb;
+	--root-color-background: #fff;
+	--root-color-border:     #333;
+	--root-font-size:         9pt;
+	--root-hue:                 0;
+	*/
+}
+
+/** For dark mode.
+ *
+ * @see       https://www.webcreatorbox.com/tech/dark-mode
+ * @created   2019-11-19
+ */
+@media (prefers-color-scheme: dark) {
+	:root {
+		/*
+		--root-color-text:         #ddd;
+		--root-color-background:   #000;
+		*/
+	}
+}
