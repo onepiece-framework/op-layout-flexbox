@@ -10,6 +10,7 @@
  */
 //	...
 return [
+	__DIR__.'/root',
 	__DIR__.'/body',
 	__DIR__.'/color',
 ];
