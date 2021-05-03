@@ -17,9 +17,7 @@ namespace OP;
 
 /** use
  *
- * @created   2019-11-22
  */
-use OP\UNIT\App;
 
 ?>
 <!doctype html>
@@ -27,28 +25,28 @@ use OP\UNIT\App;
 	<head>
 		<?php
 		//	head
-		App::Template('layout/head.phtml');
+		Template('layout/head.phtml');
 		?>
 	</head>
 	<body id="body" class="body">
 		<div id="head-area">
 			<?php
 			//	Header area
-			App::Template('layout/header.phtml');
-			App::Template('layout/menu/top.phtml');
+			Template('layout/header.phtml');
+			Template('layout/menu/top.phtml');
 			?>
 		</div>
 		<div id="body-area">
 			<div>
 				<?php
 				//	i18n language list.
-				App::Template('layout/i18n_language_list.phtml');
+				Template('layout/i18n_language_list.phtml');
 				?>
 			</div>
 			<div>
 				<?php
 				//	Left menu
-				App::Template('layout/menu/left.phtml');
+				Template('layout/menu/left.phtml');
 				?>
 			</div>
 			<div id="content-area" class="content-area">
@@ -60,15 +58,15 @@ use OP\UNIT\App;
 			<div>
 				<?php
 				//	Right menu
-				App::Template('layout/menu/right.phtml');
+				Template('layout/menu/right.phtml');
 				?>
 			</div>
 		</div>
 		<div id="foot-area">
 			<?php
 			//	Footer area
-			App::Template('layout/menu/bottom.phtml');
-			App::Template('layout/footer.phtml');
+			Template('layout/menu/bottom.phtml');
+			Template('layout/footer.phtml');
 			?>
 		</div>
 	</body>
