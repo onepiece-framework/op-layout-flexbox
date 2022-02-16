@@ -16,8 +16,8 @@ body.body div.content-area {
 	margin: 1em;
 }
 
-#head-area,
-#foot-area {
+#header-area,
+#footer-area {
 	padding: 0 0.5em;
 	width: 100vw;
 	height: 20px;
