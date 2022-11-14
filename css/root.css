@@ -19,6 +19,7 @@
 	--root-color-background: #fff;
 }
 
+/* <?php if( \OP\Config::Get('layout')['darkmode'] ?? true ): ?> */
 /** For dark mode.
  *
  * @see       https://www.webcreatorbox.com/tech/dark-mode
@@ -30,3 +31,4 @@
 		--root-color-background:   #000;
 	}
 }
+/* <?php endif; ?> */
