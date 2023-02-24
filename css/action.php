@@ -8,8 +8,12 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 //	...
-return [
-	__DIR__.'/root',
-	__DIR__.'/body',
-	__DIR__.'/color',
-];
+$return = [];
+
+//	...
+foreach( glob(__DIR__.'/*.css') as $file ){
+	$return[] = substr($file, 0, -4); // color.css --> color
+}
+
+//	...
+return $return;
