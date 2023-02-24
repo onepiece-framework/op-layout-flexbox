@@ -1,0 +1,16 @@
+
+/** op-layout-white:/css/markdown.css
+ *
+ * @created   2024-02-24
+ * @version   1.0
+ * @package   op-layout-white
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+.markdown h1:not(:first-child) {
+	padding: 0.5em;
+	background-color: #fff6e0;
+	border-left: 0.15em solid #f8b500;
+	border-radius: 2px;
+}
