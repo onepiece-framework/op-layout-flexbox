@@ -10,7 +10,8 @@
 
 .markdown h1:not(:first-child) {
 	padding: 0.5em;
-	background-color: #fff6e0;
-	border-left: 0.15em solid #f8b500;
+	color: var(--white-color-h1-text);
+	background-color: var(--white-color-h1-back);
+	border-left: 0.15em solid var(--white-color-h1-border);
 	border-radius: 2px;
 }
