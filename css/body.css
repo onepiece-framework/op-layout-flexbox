@@ -10,6 +10,11 @@
 
 body.body {
 	border: 0;
+    font-size: 10px;
+}
+
+body.body * {
+    font-size:      1.0rem;
 }
 
 body.body div.content-area {
