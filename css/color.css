@@ -9,14 +9,6 @@
  */
 
 :root {
-	/*
-	--root-color-disabled:   #bbb;
-	--root-color-border:     #333;
-	--root-font-size:         9pt;
-	--root-hue:                 0;
-	--root-color-text:       #555;
-	--root-color-background: #fff;
-	*/
 	--white-color-h1-text:   #000000;
 	--white-color-h1-back:   #fff6e0;
 	--white-color-h1-border: #f8b500;
@@ -30,10 +22,6 @@
  */
 @media (prefers-color-scheme: dark) {
 	:root {
-	/*
-	--root-color-text:         #ddd;
-	--root-color-background:   #000;
-	*/
 	--white-color-h1-text:   #000000;
 	--white-color-h1-back:   #cfc6a0;
 	--white-color-h1-border: #f8b500;
