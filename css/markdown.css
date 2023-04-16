@@ -8,7 +8,7 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-.markdown h1:not(:first-child) {
+body.body .markdown h1:not(:first-child) {
 	padding: 0.5em;
 	color: var(--white-color-h1-text);
 	background-color: var(--white-color-h1-back);
