@@ -1,0 +1,67 @@
+
+/** op-layout-bulgaria:/css/layout.css
+ *
+ * @created   2023-05-09
+ * @version   1.0
+ * @package   op-layout-bulgaria
+ * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright Tomoaki Nagahara All right reserved.
+ */
+
+html {
+    height: 100%;
+}
+
+#body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-area {
+    top: 0;
+    position: sticky;
+    /* <?php if(!(OP()->Config('layout')['debug'] ?? null) ): ?> */
+    background-color: inherit;
+    /* <?php endif; ?> */
+}
+
+#body-area {
+    margin: 0 1.0rem;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-area {
+    bottom: 0;
+    position: sticky;
+    /* <?php if(!(OP()->Config('layout')['debug'] ?? null) ): ?> */
+    background-color: inherit;
+    /* <?php endif; ?> */
+}
+
+#menu-middle {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    border: 1px dotted green;
+}
+
+#menu-middle > * {
+	margin: 1px;
+	border: 1px solid red;
+}
+
+#content {
+    border: 1px solid blue;
+    flex-grow: 1;
+}
+
+#menu-top,
+#menu-left,
+#menu-right,
+#menu-bottom,
+#menu-middle {
+	_border: 1px solid black;
+}

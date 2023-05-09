@@ -8,31 +8,13 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
-body {
+body.body {
 	border: 0;
     font-size: 10px;
     font-family: Avenir, "Open Sans", sans-serif;
+    background-color: var(--color-header-background);
 }
 
-body * {
+body.body * {
     font-size:      1.0rem;
-}
-
-#header-area,
-#footer-area {
-	padding: 0 0.5em;
-	width: 100vw;
-	height: 1.0rem;
-	vertical-align: middle;
-	display: table-cell;
-}
-
-#header-area {
-	top: 0;
-	position: sticky;
-	background-color: var(--color-background);
-}
-
-#body-area {
-	min-height: calc(100vh - 4.5em);
 }
