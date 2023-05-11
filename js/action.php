@@ -7,5 +7,13 @@
  * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright   Tomoaki Nagahara All right reserved.
  */
-return [
-];
+//  ...
+$return = [];
+
+//  ...
+foreach( glob(__DIR__.'/*.js') as $file ){
+    $return[] = substr($file, 0, -3); // fetch.js --> fetch
+}
+
+//  ...
+return $return;
