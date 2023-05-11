@@ -21,9 +21,6 @@ html {
 #header-area {
     top: 0;
     position: sticky;
-    /* <?php if(!(OP()->Config('layout')['debug'] ?? null) ): ?> */
-    background-color: inherit;
-    /* <?php endif; ?> */
 }
 
 #body-area {
@@ -36,32 +33,19 @@ html {
 #footer-area {
     bottom: 0;
     position: sticky;
-    /* <?php if(!(OP()->Config('layout')['debug'] ?? null) ): ?> */
+}
+
+#header-area,
+#footer-area {
     background-color: inherit;
-    /* <?php endif; ?> */
 }
 
 #menu-middle {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    border: 1px dotted green;
-}
-
-#menu-middle > * {
-	margin: 1px;
-	border: 1px solid red;
 }
 
 #content {
-    border: 1px solid blue;
     flex-grow: 1;
-}
-
-#menu-top,
-#menu-left,
-#menu-right,
-#menu-bottom,
-#menu-middle {
-	_border: 1px solid black;
 }
