@@ -12,10 +12,3 @@ p.test {
 	color: blue;
 	font-weight: bold;
 }
-
-body,
-#header-area,
-#body-area,
-#footer-area {
-	border: 1px solid black;
-}
