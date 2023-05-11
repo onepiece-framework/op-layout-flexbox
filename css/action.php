@@ -1,11 +1,11 @@
 <?php
-/** op-layout-bulgaria:/css/action.php
+/** op-layout-flexbox:/css/action.php
  *
- * @created   2017-09-06
- * @version   1.0
- * @package   op-layout-bulgaria
- * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
- * @copyright Tomoaki Nagahara All right reserved.
+ * @created     2023-05-09
+ * @version     1.0
+ * @package     op-layout-flexbox
+ * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright   Tomoaki Nagahara All right reserved.
  */
 //	...
 $return = [];
