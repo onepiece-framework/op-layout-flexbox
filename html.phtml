@@ -18,9 +18,12 @@ declare(strict_types=1);
  */
 namespace OP;
 
+//  Get html config.
+$config = OP()->Config('html');
+
 ?>
 <!doctype html>
-<html lang="<?= OP()->Config('html')['lang'] ?>">
+<html lang="<?= $config['lang'] ?? 'en' ?>">
     <head>
         <?php
         Template('layout/head.phtml');
