@@ -9,10 +9,10 @@
  */
 
 :root {
-	--color-text:   #050505;
-	--color-back:   #fff6e0;
-	--color-border: #f8b500;
-	--color-background: rgba(255, 255, 255, 1);
+    --color-text:   #050505;
+    --color-back:   #fff6e0;
+    --color-border: #f8b500;
+    --color-background: rgba(255, 255, 255, 1);
 }
 
 /* <?php if( OP()->Config('layout')['darkmode'] ?? true ): ?> */
