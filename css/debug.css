@@ -8,7 +8,13 @@
  * @copyright   Tomoaki Nagahara All right reserved.
  */
 
-/* <?php if( 0 ): ?> */
+/*
+<?php
+$debug = OP()->Config('flexbox')['debug'] ?? true;
+?>
+*/
+
+/* <?php if( $debug ): ?> */
 
 #header-area,
 #footer-area,
