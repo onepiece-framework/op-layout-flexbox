@@ -1,6 +1,7 @@
 <?php
 /** op-layout-flexbox:/css/action.php
  *
+ * @deprecated  op-skeleton-2023
  * @created     2023-05-09
  * @version     1.0
  * @package     op-layout-flexbox
