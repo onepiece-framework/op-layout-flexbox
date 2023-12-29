@@ -13,4 +13,8 @@
  */
 declare(strict_types=1);
 
+//	...
+\OP\RootPath('flexbox', __DIR__.'/template/');
+
+//	...
 include('html.phtml');
