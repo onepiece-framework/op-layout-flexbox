@@ -13,8 +13,13 @@
  */
 declare(strict_types=1);
 
+/** namespace
+ *
+ */
+namespace OP;
+
 //	...
-\OP\RootPath('flexbox', __DIR__.'/template/');
+RootPath('flexbox', __DIR__.'/template/');
 
 //	...
 include('html.phtml');
