@@ -23,12 +23,12 @@ $config = OP()->Config('html');
 
 //	...
 $template_dir     = RootPath('template');
-$header_path      = file_exists($path = $template_dir . 'layout/header.phtml')      ? $path : 'flexbox:/header.phtml';
-$footer_path      = file_exists($path = $template_dir . 'layout/footer.phtml')      ? $path : 'flexbox:/footer.phtml';
-$menu_top_path    = file_exists($path = $template_dir . 'layout/menu/top.phtml')    ? $path : 'flexbox:/menu_top.phtml';
-$menu_bottom_path = file_exists($path = $template_dir . 'layout/menu/bottom.phtml') ? $path : 'flexbox:/menu_bottom.phtml';
-$menu_right_path  = file_exists($path = $template_dir . 'layout/menu/right.phtml')  ? $path : 'flexbox:/menu_right.phtml';
-$menu_left_path   = file_exists($path = $template_dir . 'layout/menu/left.phtml')   ? $path : 'flexbox:/menu_left.phtml';
+$header_path      = file_exists($path = $template_dir . 'layout/header.phtml')      ? OP()->MetaPath()->Encode($path) : 'flexbox:/header.phtml';
+$footer_path      = file_exists($path = $template_dir . 'layout/footer.phtml')      ? OP()->MetaPath()->Encode($path) : 'flexbox:/footer.phtml';
+$menu_top_path    = file_exists($path = $template_dir . 'layout/menu/top.phtml')    ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_top.phtml';
+$menu_bottom_path = file_exists($path = $template_dir . 'layout/menu/bottom.phtml') ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_bottom.phtml';
+$menu_right_path  = file_exists($path = $template_dir . 'layout/menu/right.phtml')  ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_right.phtml';
+$menu_left_path   = file_exists($path = $template_dir . 'layout/menu/left.phtml')   ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_left.phtml';
 
 ?>
 <!doctype html>
