@@ -21,5 +21,9 @@ namespace OP;
 //	...
 RootPath('flexbox', __DIR__.'/template/');
 
+//	Load default config.
+$config = OP()->Template('config.php');
+OP()->Config('flexbox', $config);
+
 //	...
 include('html.phtml');
