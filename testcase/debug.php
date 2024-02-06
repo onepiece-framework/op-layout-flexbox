@@ -13,5 +13,9 @@
  */
 namespace OP;
 
-//	...
-OP::Html('This is layout of Flexbox.');
+?>
+<h1>Debug mode</h1>
+<p>This debug switch is flexbox layout only.</p>
+<section>
+	[ <a href="?debug[flexbox]=1">On</a> | <a href="?debug[flexbox]=0">Off</a> ]
+</section>
