@@ -16,6 +16,10 @@ $debug = OP()->Config('flexbox')['debug'] ?? true;
 
 /* <?php if( $debug ): ?> */
 
+:root {
+	--color-background: rgba(0, 0, 0, 0);
+}
+
 #header-area,
 #footer-area,
 #menu-top,
