@@ -1,0 +1,16 @@
+
+/** op-layout-flexbox:/css/config.css
+ *
+ * @created     2024-02-06
+ * @version     1.0
+ * @package     op-layout-flexbox
+ * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright   Tomoaki Nagahara All right reserved.
+ */
+
+/*
+<?php
+$config = include(__DIR__.'/../config.php');
+OP()->Config('flexbox', $config);
+?>
+*/
