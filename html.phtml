@@ -18,18 +18,38 @@ declare(strict_types=1);
  */
 namespace OP;
 
-//  Get html config.
+//  Get config.
 $html   = OP()->Config('html');
+$layout = OP()->Config('layout');
 
 //	...
 $template_dir     = RootPath('template');
-$header_path      = file_exists($path = $template_dir . 'layout/header.phtml')      ? OP()->MetaPath()->Encode($path) : 'flexbox:/header.phtml';
-$footer_path      = file_exists($path = $template_dir . 'layout/footer.phtml')      ? OP()->MetaPath()->Encode($path) : 'flexbox:/footer.phtml';
-$menu_top_path    = file_exists($path = $template_dir . 'layout/menu/top.phtml')    ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_top.phtml';
-$menu_bottom_path = file_exists($path = $template_dir . 'layout/menu/bottom.phtml') ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_bottom.phtml';
-$menu_right_path  = file_exists($path = $template_dir . 'layout/menu/right.phtml')  ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_right.phtml';
-$menu_left_path   = file_exists($path = $template_dir . 'layout/menu/left.phtml')   ? OP()->MetaPath()->Encode($path) : 'flexbox:/menu_left.phtml';
-
+/* @var $path_header string */
+/* @var $path_footer string */
+foreach(['header','footer'] as $position){
+	//	...
+	$variable_name = "path_{$position}";
+	//	...
+	if( $path = $layout['path'][$position] ?? null ){
+		$$variable_name = OP()->MetaPath($path);
+	}else{
+		$$variable_name = file_exists($path = "{$template_dir}layout/{$position}.phtml") ? OP()->MetaPath($path) : "flexbox:/{$position}.phtml";
+	}
+}
+/* @var $path_menu_top    string */
+/* @var $path_menu_left   string */
+/* @var $path_menu_right  string */
+/* @var $path_menu_bottom string */
+foreach(['top','bottom','right','left'] as $position){
+	//	...
+	$variable_name = "path_menu_{$position}";
+	//	...
+	if( $path = $layout['path']['menu'][$position] ?? null ){
+		$$variable_name = OP()->MetaPath($path);
+	}else{
+		$$variable_name = file_exists($path = "{$template_dir}layout/menu/{$position}.phtml") ? OP()->MetaPath($path) : "flexbox:/menu_{$position}.phtml";
+	}
+}
 ?>
 <!doctype html>
 <html lang="<?= $html['lang'] ?? 'en' ?>">
@@ -39,18 +59,18 @@ $menu_left_path   = file_exists($path = $template_dir . 'layout/menu/left.phtml'
         ?>
     </head>
     <body id="body" class="body">
-        <div id="header-area"><?php Template($header_path) ?></div>
+        <div id="header-area"><?php Template($path_header) ?></div>
         <div id="body-area">
-            <div id="menu-top"><?php Template($menu_top_path) ?></div>
+            <div id="menu-top"><?php Template($path_menu_top) ?></div>
             <div id="menu-middle">
-                <div id="menu-left" ><?php Template($menu_left_path) ?></div>
+                <div id="menu-left" ><?php Template($path_menu_left) ?></div>
                 <div id="content"   ><?php Content() ?></div>
-                <div id="menu-right"><?php Template($menu_right_path) ?></div>
+                <div id="menu-right"><?php Template($path_menu_right) ?></div>
             </div>
-            <div id="menu-bottom"><?php Template($menu_bottom_path) ?></div>
+            <div id="menu-bottom"><?php Template($path_menu_bottom) ?></div>
         </div>
         <div id="footer-area">
-            <?php Template($footer_path) ?>
+            <?php Template($path_footer) ?>
             <?php Template('flexbox:/copyright.phtml') ?>
         </div>
     </body>
