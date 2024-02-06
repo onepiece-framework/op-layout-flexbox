@@ -13,6 +13,7 @@ body.body {
     font-size: 10px;
     font-family: Avenir, "Open Sans", sans-serif;
     background-color: var(--color-background);
+	color: var(--color-text);
 }
 
 body.body * {
