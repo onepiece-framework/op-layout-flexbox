@@ -17,6 +17,7 @@ $debug = OP()->Config('flexbox')['debug'] ?? true;
 /* <?php if( $debug ): ?> */
 
 :root {
+	--color-text: black;
 	--color-background: rgba(0, 0, 0, 0);
 }
 
