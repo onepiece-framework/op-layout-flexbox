@@ -19,7 +19,7 @@ declare(strict_types=1);
 namespace OP;
 
 //  Get html config.
-$config = OP()->Config('html');
+$html   = OP()->Config('html');
 
 //	...
 $template_dir     = RootPath('template');
@@ -32,7 +32,7 @@ $menu_left_path   = file_exists($path = $template_dir . 'layout/menu/left.phtml'
 
 ?>
 <!doctype html>
-<html lang="<?= $config['lang'] ?? 'en' ?>">
+<html lang="<?= $html['lang'] ?? 'en' ?>">
     <head>
         <?php
         Template('layout/head.phtml');
