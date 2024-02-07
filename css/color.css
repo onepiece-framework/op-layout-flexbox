@@ -11,7 +11,7 @@
 :root {
     --color-text:   #050505;
     --color-back:   #fff6e0;
-    --color-border: #f8b500;
+    --color-border: #101010;
     --color-background: rgba(255, 255, 255, 1);
     --color-link:   #0505f5;
 }
@@ -24,9 +24,9 @@
  */
 @media (prefers-color-scheme: dark) {
     :root {
-    --color-text:   #fff6e0;
+    --color-text:   #f0f0f0;
     --color-back:   #050505;
-    --color-border: #f8b500;
+    --color-border: #c0c0c0;
     --color-background: rgba(30, 30, 30, 1);
     --color-link:   #b5d5ff;
     }
