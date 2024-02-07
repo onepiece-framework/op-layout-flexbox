@@ -15,7 +15,3 @@ body.body {
 	color       :     var(--color-text);
 	background-color: var(--color-background);
 }
-
-body.body * {
-    font-size:      1.0rem;
-}
