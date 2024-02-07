@@ -1,0 +1,15 @@
+
+/** op-layout-flexbox:/css/reset.css
+ *
+ * @created     2024-02-07
+ * @version     1.0
+ * @package     op-layout-flexbox
+ * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright   Tomoaki Nagahara All right reserved.
+ */
+
+body.body * {
+	margin    :       0;
+	padding   :       0;
+	font-size :  1.0rem;
+}
