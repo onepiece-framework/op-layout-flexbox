@@ -9,11 +9,11 @@
  */
 
 body.body {
-	border: 0;
-    font-size: 10px;
-    font-family: Avenir, "Open Sans", sans-serif;
-    background-color: var(--color-background);
-	color: var(--color-text);
+	border      :     0;
+	font-size   :  10px;
+	font-family : Avenir, "Open Sans", sans-serif;
+	color       :     var(--color-text);
+	background-color: var(--color-background);
 }
 
 body.body * {
