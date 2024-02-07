@@ -10,7 +10,7 @@
 
 /*
 <?php
-$debug = OP()->Config('flexbox')['debug'] ?? true;
+$debug = OP()->Config('flexbox')['debug'] ?? false;
 ?>
 */
 
