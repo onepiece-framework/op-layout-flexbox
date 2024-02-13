@@ -10,6 +10,7 @@
 
 /*
 <?php
+//	Set default config for WebPack.
 $config = include(__DIR__.'/../config.php');
 OP()->Config('flexbox', $config);
 ?>
