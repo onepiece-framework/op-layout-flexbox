@@ -1,0 +1,14 @@
+
+/** op-layout-flexbox:/css/content.css
+ *
+ * @created     2024-02-14
+ * @version     1.0
+ * @package     op-layout-flexbox
+ * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright   Tomoaki Nagahara All right reserved.
+ */
+
+#content {
+	padding-left  : 1rem;
+	padding-right : 1rem;
+}
