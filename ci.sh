@@ -15,14 +15,20 @@
 # Get command
 COMMAND=$(ps -ocommand= -p $PPID)
 
+
 # Parse
 ARRAY=(${COMMAND//,/ })
 REMOTE=${ARRAY[2]}
-BRANCH=${ARRAY[3]}
+if [ "${ARRAY[0]}" = 'git' ]; then
+	BRANCH=${ARRAY[3]}
+else
+	# Get current branch name
+	# BRANCH=`git rev-parse --abbrev-ref HEAD`
+	BRANCH=`git branch --show-current`
+fi
 PHP=`php -r "echo PHP_MAJOR_VERSION.PHP_MINOR_VERSION;"`
 
-# Get current branch name
-#BRANCH=`git rev-parse --abbrev-ref HEAD`
+# Check if branch name is empty.
 if [ ! $BRANCH ]; then
   echo "ci.sh: Empty branch name."
   exit 1
@@ -37,7 +43,6 @@ fi
 
 # Set CI saved commit id file name
 CI_FILE=".ci_commit_id_"$BRANCH"_php"$PHP
-#echo $CI_FILE
 
 # Check if file exists
 if [ ! -f $CI_FILE ]; then
@@ -47,13 +52,17 @@ fi
 
 # Get commit id
 CI_COMMIT_ID=`cat $CI_FILE`
-#echo $CI_COMMIT_ID
 
 # Get correct commit id
 COMMIT_ID=`git rev-parse $BRANCH`
-#echo $COMMIT_ID
 
-#
+# Check if commit id is empty.
+if [ -z "$CI_COMMIT_ID" ]; then
+	echo "ci.sh: Empty commit id. ($CI_FILE)"
+	exit 1
+fi
+
+# Check commit id is match.
 if [ $COMMIT_ID != $CI_COMMIT_ID ]; then
   echo "ci.sh: Unmatch commit id"
   echo $COMMIT_ID branch=$BRANCH
