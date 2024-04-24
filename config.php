@@ -16,7 +16,8 @@ namespace OP\LAYOUT\FLEXBOX;
 //	...
 if( OP()->Env()->isAdmin() ){
 	//	In case of set debug flag.
-	if( ($debug = OP()->Request('debug')['flexbox'] ?? null) !== null ){
+	$debug = OP()->Request('debug')['flexbox'] ?? null;
+	if( $debug !== null ){
 		//	Save to session.
 		\OP\Session::Set('debug', $debug);
 	}
