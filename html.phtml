@@ -47,7 +47,7 @@ foreach(['top','bottom','right','left'] as $position){
 	if( $path = $layout['path']['menu'][$position] ?? null ){
 		$$variable_name = OP()->MetaPath($path);
 	}else{
-		$$variable_name = file_exists($path = "{$template_dir}layout/menu/{$position}.phtml") ? OP()->MetaPath($path) : "flexbox:/menu_{$position}.phtml";
+		$$variable_name = file_exists($path = "{$template_dir}layout/menu/{$position}.phtml") ? OP()->MetaPath($path) : "flexbox:/menu/{$position}.phtml";
 	}
 }
 ?>
