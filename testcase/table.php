@@ -14,13 +14,14 @@
 namespace OP;
 
 ?>
+<h1>table.html</h1>
 <table>
 	<tr><th>TEST    </th><td>test</td></tr>
-	<tr><th>Text    </th><td><input type="text" name="text" value="text"/>            </td></tr>
-	<tr><th>Radio   </th><td><input type="radio" name="text" value="text"/>Radio      </td></tr>
-	<tr><th>Checkbox</th><td><input type="checkbox" name="text" value="text"/>Checkbox</td></tr>
-	<tr><th>Textarea</th><td><textarea>textarea</textarea>                            </td></tr>
-	<tr><th>Button  </th><td><button>Button</button>                                  </td></tr>
+	<tr><th>Text    </th><td><input type="text"     name="text" value="text"/>     </td></tr>
+	<tr><th>Radio   </th><td><input type="radio"    name="text" value="1"/>Radio   </td></tr>
+	<tr><th>Checkbox</th><td><input type="checkbox" name="text" value="1"/>Checkbox</td></tr>
+	<tr><th>Textarea</th><td><textarea>textarea</textarea></td></tr>
+	<tr><th>Button  </th><td><button>Button</button></td></tr>
 </table>
 <style>
 table, tr, th, td {
@@ -34,6 +35,7 @@ td {
 input {
 	_margin: auto;
 }
+
 td,
 textarea {
 	margin:  0;
