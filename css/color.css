@@ -29,6 +29,8 @@
     --color-border: #c0c0c0;
     --color-background: rgba(30, 30, 30, 1);
     --color-link:   #b5d5ff;
+    --color-link-visited: #b5d5ff;
+    --color-link-hover:   #b5d5ff;
     }
 }
 /* <?php endif; ?> */
