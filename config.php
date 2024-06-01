@@ -30,5 +30,6 @@ if( OP()->Env()->isAdmin() ){
 
 //	...
 return [
+	'darkmode' => true,
 	'debug' => $debug,
 ];
