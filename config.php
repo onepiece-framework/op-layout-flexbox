@@ -13,6 +13,7 @@
  */
 namespace OP\LAYOUT\FLEXBOX;
 
+/*
 //	...
 if( OP()->Env()->isAdmin() ){
 	//	In case of set debug flag.
@@ -27,9 +28,10 @@ if( OP()->Env()->isAdmin() ){
 	//	Not admin user.
 	$debug = false;
 }
+*/
 
 //	...
 return [
 	'darkmode' => true,
-	'debug' => $debug,
+	'debug'    => false,
 ];
