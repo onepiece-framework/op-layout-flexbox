@@ -30,8 +30,10 @@ if( OP()->Env()->isAdmin() ){
 }
 */
 
+//	Darkmode
+OP()->Config('layout', ['darkmode' => true]);
+
 //	...
 return [
-	'darkmode' => true,
 	'debug'    => false,
 ];
