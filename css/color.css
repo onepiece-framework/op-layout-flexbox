@@ -18,7 +18,7 @@
     --color-link-hover:   #0505f5;
 }
 
-/* <?php if( OP()->Config('layout')['darkmode'] ?? true ): ?> */
+/* <?php if( OP()->Config('layout')['darkmode'] ?? null ): ?> */
 /** For dark mode.
  *
  * @see       https://www.webcreatorbox.com/tech/dark-mode
