@@ -13,7 +13,9 @@
     --color-back:   #fff6e0;
     --color-border: #101010;
     --color-background: rgba(255, 255, 255, 1);
-    --color-link:   #0505f5;
+    --color-link:   #0f0ff0;
+    --color-link-visited: #0505f5;
+    --color-link-hover:   #0505f5;
 }
 
 /* <?php if( OP()->Config('layout')['darkmode'] ?? true ): ?> */
