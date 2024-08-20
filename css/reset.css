@@ -19,12 +19,16 @@
 	font-family : sans-serif;
 */
 
+/*
 	transition-property: color, background;
 	transition-duration: 0.5s;
+*/
 }
 
 /* for input[type="text"], textarea */
 .body * {
+/*
 	font-size   : inherit;
 	font-family : inherit;
+*/
 }
