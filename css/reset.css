@@ -32,3 +32,11 @@
 	font-family : inherit;
 */
 }
+
+body * {
+	font-size   : inherit;
+	font-family : inherit;
+
+	transition-property: color, background;
+	transition-duration: 0.5s;
+}
