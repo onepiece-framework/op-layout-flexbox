@@ -19,7 +19,6 @@ declare(strict_types=1);
 namespace OP;
 
 //  Get config.
-$html   = OP()->Config('html');
 $layout = OP()->Config('layout');
 
 //	...
@@ -52,7 +51,7 @@ foreach(['top','bottom','right','left'] as $position){
 }
 ?>
 <!doctype html>
-<html lang="<?= $html['lang'] ?? 'en' ?>">
+<html>
     <head>
         <?php
         Template('layout/head.phtml');
