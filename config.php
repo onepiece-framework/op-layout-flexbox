@@ -13,26 +13,6 @@
  */
 namespace OP\LAYOUT\FLEXBOX;
 
-/*
-//	...
-if( OP()->Env()->isAdmin() ){
-	//	In case of set debug flag.
-	$debug = OP()->Request('debug')['flexbox'] ?? null;
-	if( $debug !== null ){
-		//	Save to session.
-		\OP\Session::Set('debug', $debug);
-	}
-	//	For admin.
-	$debug = \OP\Session::Get('debug');
-}else{
-	//	Not admin user.
-	$debug = false;
-}
-*/
-
-//	Darkmode
-OP()->Config('layout', ['darkmode' => true]);
-
 //	...
 return [
 	'debug'    => false,
