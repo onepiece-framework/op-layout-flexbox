@@ -1,0 +1,60 @@
+
+/** op-layout-flexbox:/css/code.css
+ *
+ * @created     2024-10-17
+ * @version     1.0
+ * @package     op-layout-flexbox
+ * @author      Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
+ * @copyright   Tomoaki Nagahara All right reserved.
+ */
+
+:root {
+	--code-color-text:       hsl(  0,  50%,   0%);
+	--code-color-back:       hsl(  0,   0%,  95%);
+	--code-color-border:     hsl(  0,   0%,  90%);
+}
+
+/* <?php if( \OP\Config::Get('layout')['darkmode'] ?? null ): ?> */
+@media (prefers-color-scheme: dark) {
+	:root {
+	--code-color-text:       hsl(  0,   0%, 100%);
+	--code-color-back:       hsl(  0,   0%,  20%);
+	--code-color-border:     hsl(  0,   0%,  30%);
+	}
+}
+/* <?php endif; ?> */
+
+code,
+.code {
+	font-family: "Courier New", Consolas, monospace;
+	border-radius: 0.2em;
+
+	color:            var(--code-color-text);
+	background-color: var(--code-color-back);
+	border: 1px solid var(--code-color-border);
+
+	overflow: scroll;
+	line-height: 1.3em;
+}
+
+code {
+	white-space: pre;
+	margin: 0 0.25em;
+	padding:0 0.25em;
+}
+
+/* Separate to inline code */
+pre > code {
+	display: block;
+}
+
+pre > code,
+div.code {
+	margin:  1em 0;
+	padding: 0.5em 1em;
+}
+
+span.code {
+	margin:  .5em;
+	padding: .5em;
+}
