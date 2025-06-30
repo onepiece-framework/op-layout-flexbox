@@ -61,7 +61,7 @@ foreach(['top','bottom','right','left'] as $position){
 			<div id="menu-top"><?php OP()->Template($path_menu_top) ?></div>
 			<div id="menu-middle">
 				<div id="menu-left" ><?php OP()->Template($path_menu_left) ?></div>
-				<div id="content"   ><?php OP()->Content() ?></div>
+				<div id="content"   ><?php OP()->App()->Content() ?></div>
 				<div id="menu-right"><?php OP()->Template($path_menu_right) ?></div>
 			</div>
 			<div id="menu-bottom"><?php OP()->Template($path_menu_bottom) ?></div>
