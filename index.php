@@ -19,6 +19,11 @@ declare(strict_types=1);
 namespace OP;
 
 //	...
+if( OP()->Unit()->isInstalled('WebPack') === false ){
+	throw new \Exception("WebPack unit has not been installed.");
+}
+
+//	...
 RootPath('flexbox', __DIR__.'/template/');
 
 //	Load default config.
