@@ -22,7 +22,8 @@ namespace OP;
 $layout = OP()->Config('layout');
 
 //	...
-$template_dir     = RootPath('template');
+$template_dir = _ROOT_ASSET_.'/template/';
+
 /* @var $path_header string */
 /* @var $path_footer string */
 foreach(['header','footer'] as $position){
@@ -30,9 +31,9 @@ foreach(['header','footer'] as $position){
 	$variable_name = "path_{$position}";
 	//	...
 	if( $path = $layout['path'][$position] ?? null ){
-		$$variable_name = OP()->MetaPath($path);
+		$$variable_name = OP()->Path($path);
 	}else{
-		$$variable_name = file_exists($path = "{$template_dir}layout/{$position}.phtml") ? OP()->MetaPath($path) : "flexbox:/{$position}.phtml";
+		$$variable_name = file_exists($path = "{$template_dir}layout/{$position}.phtml") ? OP()->Path($path) : "flexbox:/{$position}.phtml";
 	}
 }
 /* @var $path_menu_top    string */
@@ -44,9 +45,9 @@ foreach(['top','bottom','right','left'] as $position){
 	$variable_name = "path_menu_{$position}";
 	//	...
 	if( $path = $layout['path']['menu'][$position] ?? null ){
-		$$variable_name = OP()->MetaPath($path);
+		$$variable_name = OP()->Path($path);
 	}else{
-		$$variable_name = file_exists($path = "{$template_dir}layout/menu/{$position}.phtml") ? OP()->MetaPath($path) : "flexbox:/menu/{$position}.phtml";
+		$$variable_name = file_exists($path = "{$template_dir}layout/menu/{$position}.phtml") ? OP()->Path($path) : "flexbox:/menu/{$position}.phtml";
 	}
 }
 ?>
