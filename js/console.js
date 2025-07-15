@@ -8,4 +8,4 @@
  * @copyright   Tomoaki Nagahara All right reserved.
  */
 
-console.log('<?= OP()->Env()->Timestamp()  ?>');
+console.log('<?= OP()->Timestamp()  ?>');
