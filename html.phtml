@@ -64,6 +64,11 @@ foreach(['top','bottom','right','left'] as $position){
 				<div id="content"   ><?php OP()->Unit()->App()->Content() ?></div>
 				<div id="menu-right"><?php OP()->Template($path_menu_right) ?></div>
 			</div>
+
+			<?php if( OP()->Config('execute')['translation'] ?? false ): ?>
+				<?php OP()->Template('translation.phtml') ?>
+			<?php endif; ?>
+
 			<div id="menu-bottom"><?php OP()->Template($path_menu_bottom) ?></div>
 		</div>
 		<div id="footer-area">
